@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>A könyvtári tagok</title>
+    </h:head>
+    <h:body>
+        
+        <h:form>
+            
+            <h:commandLink value="A könyvekhez" action="konyvekhez"/>
+            <h:commandButton value="Új tag felvétele" action="ujtag"/> <br/> <br/>
+            
+            <h:dataTable value="#{tagok.kiirTagLista}" var="kivTag">
+                <h:column>
+                    <f:facet name="header">
+                        Név
+                    </f:facet>
+                    <h:inputText value="#{kivTag.nev}"/>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        e-mail
+                    </f:facet>
+                    <h:inputText value="#{kivTag.emaill}"/>
+                </h:column>
+                
+                 <h:column>
+                    <f:facet name="header">
+                        Módosít                        
+                    </f:facet>
+                     <h:commandButton value="Módosít" action="#{tagok.tagKivalasztasa(kivTag)}"></h:commandButton> 
+                </h:column>
+                
+            </h:dataTable>
+                       
+            
+        </h:form>       
+        
+    </h:body>
+</html>
+

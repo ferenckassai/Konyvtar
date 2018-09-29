@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="modositKonyv.xhtml" x="583" y="14" zoom="true"/>
+        <Node id="index.xhtml" x="351" y="130" zoom="true"/>
+        <Node id="ujtagfelvetele.xhtml" x="168" y="376" zoom="true"/>
+        <Node id="modositTag.xhtml" x="540" y="367" zoom="true"/>
+        <Node id="ujkonyv.xhtml" x="177" y="10" zoom="true"/>
+        <Node id="tagok.xhtml" x="351" y="281" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>
